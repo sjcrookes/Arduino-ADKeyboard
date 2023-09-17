@@ -22,6 +22,9 @@ int pressed = kb.pressed();
 
 // Alternative usage, pass a pin and check the result, if it was pressed then returns true
 bool btn1_pressed = kb.pressed(1);
+
+// Alternative, direct usage, pass a pin and get which pin was pressed 1..5, or 0 for no press, EG: A0
+int pressed = ADKeyboardState(A0);
 ```
 
 == Example ==
