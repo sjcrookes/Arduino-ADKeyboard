@@ -6,7 +6,7 @@ This library allows an Aduino board to interface with a 5 button ADKeyboard with
 
 Download this repo as a ZIP, and use the Arduino IDE to import it
 
-** Sketch > Include Library > Add .ZIP Library **
+** Sketch > Include Library > Add .ZIP Library
 
 == Usage ==
 
@@ -28,7 +28,7 @@ bool btn1_pressed = kb.pressed(1);
 
 Use the Arduino IDE to open the supplied example code.
 
-** File > Examples > ADKeyboard > example1 **
+** File > Examples > ADKeyboard > example1
 
 == License ==
 
