@@ -20,6 +20,12 @@
 
 #include "ADKeyboard.h"
 
+unsigned ADKeyboardState(int pin)
+{
+  ADKeyboard keyboard(pin);
+  return keyboard.pressed();
+}
+
 /**
  * @brief Constructor sets the pin to read from
  * 

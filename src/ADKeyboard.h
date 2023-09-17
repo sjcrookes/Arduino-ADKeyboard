@@ -23,6 +23,8 @@
 
 #include "Arduino.h"
 
+unsigned ADKeyboardState(int pin);
+
 class ADKeyboard
 {
 
