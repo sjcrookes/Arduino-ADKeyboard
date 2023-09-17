@@ -5,7 +5,30 @@ This library allows an Aduino board to interface with a 5 button ADKeyboard with
 == Installation ==
 
 Download this repo as a ZIP, and use the Arduino IDE to import it
-* Sketch > Include Library > Add .ZIP Library
+
+** Sketch > Include Library > Add .ZIP Library **
+
+== Usage ==
+
+```
+// Include the library
+#include <ADKeyboard.h>
+
+// Create a new keyboard instance passing the analog pin that the OUT pin on the ADKeyboard device is connected to. EG: A0
+ADKeyboard kb(A0);
+
+// Get which pin was pressed 1..5, or 0 for no press
+int pressed = kb.pressed();
+
+// Alternative usage, pass a pin and check the result, if it was pressed then returns true
+bool btn1_pressed = kb.pressed(1);
+```
+
+== Example ==
+
+Use the Arduino IDE to open the supplied example code.
+
+** File > Examples > ADKeyboard > example1 **
 
 == License ==
 
